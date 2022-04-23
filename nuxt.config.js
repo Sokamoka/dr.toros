@@ -37,7 +37,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/i18n'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -45,6 +45,22 @@ export default {
       plugins: {
         tailwindcss: {},
         autoprefixer: {},
+      },
+    },
+  },
+
+  i18n: {
+    locales: ['hu', 'en'],
+    defaultLocale: 'hu',
+    vueI18n: {
+      fallbackLocale: 'hu',
+      messages: {
+        hu: {
+          welcome: 'Üdvözlet',
+        },
+        en: {
+          welcome: 'Welcome',
+        },
       },
     },
   },
