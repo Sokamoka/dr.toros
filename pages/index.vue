@@ -3,7 +3,7 @@
     <NavHeader />
     <HeroSection />
     <IntroSection />
-    <SkilsSection />
+    <SkillsSection />
     <TeamSection />
     <ResponsibilitySection />
     <ContactSection />
@@ -15,7 +15,7 @@
 import NavHeader from '../components/NavHeader.vue'
 import HeroSection from '../components/home/HeroSection.vue'
 import IntroSection from '../components/home/IntroSection.vue'
-import SkilsSection from '../components/home/SkilsSection.vue'
+import SkillsSection from '../components/home/SkillsSection.vue'
 import TeamSection from '../components/home/TeamSection.vue'
 import FooterSection from '../components/home/FooterSection.vue'
 import ContactSection from '../components/home/ContactSection.vue'
@@ -27,7 +27,7 @@ export default {
     NavHeader,
     HeroSection,
     IntroSection,
-    SkilsSection,
+    SkillsSection,
     TeamSection,
     FooterSection,
     ContactSection,
