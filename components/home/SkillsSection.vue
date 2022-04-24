@@ -2,7 +2,7 @@
   <section class="flex items-center bg-primary py-14">
     <div class="container mx-auto px-10">
       <h1 class="text-white mb-10">Szakterületeink</h1>
-      <div class="px-20">
+      <div class="px-0 sm:px-20">
         <p class="sm:columns-2 sm:gap-5 text-white">
           Csak a változás állandó és az ehhez való alkalmazkodás jelenti a hosszútávú siker zálogát. A preventív
           hozzáállást, a mediációs megoldásokat elengedhetetlenül fontos beépíteni az üzleti és jogi
@@ -16,7 +16,7 @@
           megoldást.Ne jogi problémáinkkal, hanem jogi ügyeinkkel forduljunk ügyvédhez!
         </p>
 
-        <div class="grid grid-cols-3 sm:grid-cols-7 gap-0.5 mt-20">
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-0.5 mt-20">
           <template v-for="skill in skills">
             <SkillsContainer :key="skill.lableKey" :icon="skill.icon" :label-key="skill.labelKey" />
           </template>

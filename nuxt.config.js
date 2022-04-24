@@ -50,18 +50,20 @@ export default {
   },
 
   i18n: {
-    locales: ['hu', 'en'],
-    defaultLocale: 'hu',
-    vueI18n: {
-      fallbackLocale: 'hu',
-      messages: {
-        hu: {
-          welcome: 'Üdvözlet',
-        },
-        en: {
-          welcome: 'Welcome',
-        },
+    locales: [
+      {
+        code: 'hu',
+        name: 'Magyar',
+        file: 'hu-HU.js',
       },
-    },
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en-GB.js',
+      },
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'hu',
   },
 }
