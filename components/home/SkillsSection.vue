@@ -1,9 +1,9 @@
 <template>
   <section class="flex items-center bg-primary py-14">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-10">
       <h1 class="text-white mb-10">Szakterületeink</h1>
       <div class="px-20">
-        <p class="columns-2 gap-5 text-white">
+        <p class="sm:columns-2 sm:gap-5 text-white">
           Csak a változás állandó és az ehhez való alkalmazkodás jelenti a hosszútávú siker zálogát. A preventív
           hozzáállást, a mediációs megoldásokat elengedhetetlenül fontos beépíteni az üzleti és jogi
           kultúrába.Megbízóinkkal a nulladik pillanattól közösen gondolkodunk. Az ügyvéd egyfajta tanácsadó szerepben
@@ -16,9 +16,9 @@
           megoldást.Ne jogi problémáinkkal, hanem jogi ügyeinkkel forduljunk ügyvédhez!
         </p>
 
-        <div class="grid grid-cols-7 gap-1 mt-20">
+        <div class="grid grid-cols-3 sm:grid-cols-7 gap-0.5 mt-20">
           <template v-for="skill in skills">
-            <SkilsContainer :key="skill.lableKey" :icon="skill.icon" :label-key="skill.labelKey" />
+            <SkillsContainer :key="skill.lableKey" :icon="skill.icon" :label-key="skill.labelKey" />
           </template>
         </div>
       </div>
@@ -27,13 +27,13 @@
 </template>
 
 <script>
-import SkilsContainer from './helpers/SkilsContainer.vue'
+import SkillsContainer from './helpers/SkillsContainer.vue'
 
 export default {
-  name: 'SkillsContainer',
+  name: 'SkillsSection',
 
   components: {
-    SkilsContainer,
+    SkillsContainer,
   },
 
   data() {
