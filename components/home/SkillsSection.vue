@@ -3,18 +3,20 @@
     <div class="container mx-auto px-10">
       <h1 class="text-white mb-10">Szakterületeink</h1>
       <div class="px-0 sm:px-20">
-        <p class="sm:columns-2 sm:gap-5 text-white">
-          Csak a változás állandó és az ehhez való alkalmazkodás jelenti a hosszútávú siker zálogát. A preventív
-          hozzáállást, a mediációs megoldásokat elengedhetetlenül fontos beépíteni az üzleti és jogi
-          kultúrába.Megbízóinkkal a nulladik pillanattól közösen gondolkodunk. Az ügyvéd egyfajta tanácsadó szerepben
-          jelenik meg a projektekben, így lehetőség van a szakmai és jogi szempontok összefésülésére, ami
-          költséghatékony alternatívát jelent minden szereplő számára, szemben az elhúzódó és költséges utólagos
-          jogvitákkal. Egy jó szerződés „békében” biztonságot ad, „háborúban” pedig pajzsként véd. Egy szerződéses
-          jogviszony sikeressége egyrészt a felek együttműködésén és tudatos vállalásán, másrészt az ügyvéd és megbízója
-          közvetlen kommunikációján és bizalmi viszonyán múlik.A hosszadalmas és költséges peres eljárások leggyakrabban
-          a nem megfelelő előkészítésből adódnak. Ha mégis jogvita alakulna ki, mi megkeressük a legoptimálisabb
-          megoldást.Ne jogi problémáinkkal, hanem jogi ügyeinkkel forduljunk ügyvédhez!
-        </p>
+        <div class="sm:columns-2 sm:gap-5 text-white" v-html="$t('skills.content')">
+          <p>
+            Csak a változás állandó és az ehhez való alkalmazkodás jelenti a hosszútávú siker zálogát. A preventív
+            hozzáállást, a mediációs megoldásokat elengedhetetlenül fontos beépíteni az üzleti és jogi kultúrába.
+          </p>
+          Megbízóinkkal a nulladik pillanattól közösen gondolkodunk. Az ügyvéd egyfajta tanácsadó szerepben jelenik meg
+          a projektekben, így lehetőség van a szakmai és jogi szempontok összefésülésére, ami költséghatékony
+          alternatívát jelent minden szereplő számára, szemben az elhúzódó és költséges utólagos jogvitákkal. Egy jó
+          szerződés „békében” biztonságot ad, „háborúban” pedig pajzsként véd. Egy szerződéses jogviszony sikeressége
+          egyrészt a felek együttműködésén és tudatos vállalásán, másrészt az ügyvéd és megbízója közvetlen
+          kommunikációján és bizalmi viszonyán múlik.A hosszadalmas és költséges peres eljárások leggyakrabban a nem
+          megfelelő előkészítésből adódnak. Ha mégis jogvita alakulna ki, mi megkeressük a legoptimálisabb megoldást.Ne
+          jogi problémáinkkal, hanem jogi ügyeinkkel forduljunk ügyvédhez!
+        </div>
 
         <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-0.5 mt-20">
           <template v-for="skill in skills">

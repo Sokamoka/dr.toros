@@ -1,9 +1,17 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 bg-red-100">
-    <div class="container mx-auto px-5 bg-red-400 flex">
-      <div class="flex-1">Logo</div>
-      <div>Menu</div>
-      <div class="mx-2">
+  <nav class="fixed top-0 left-0 right-0 bg-white/90">
+    <div class="container mx-auto px-5 py-5 flex items-center">
+      <div class="">
+        <img src="~/assets/images/svgs/toros_logo.svg" class="h-auto w-40" />
+      </div>
+      <div class="flex-1 space-x-5 text-right">
+        <a href="#" class="">{{ $t('menu.intro') }}</a>
+        <a href="#" class="">{{ $t('menu.skills') }}</a>
+        <a href="#" class="">{{ $t('menu.teams') }}</a>
+        <a href="#" class="">{{ $t('menu.responsibility') }}</a>
+        <a href="#" class="">{{ $t('menu.contact') }}</a>
+      </div>
+      <div class="mx-5">
         <nuxt-link
           v-for="locale in availableLocales"
           :key="locale.code"
