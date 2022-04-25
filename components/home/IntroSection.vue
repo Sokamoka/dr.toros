@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-20">
+  <section id="intro" class="pb-20 scroll-mt-16">
     <div class="bg-primary w-full h-80"></div>
     <div class="container mx-auto -mt-72 p-10">
       <h1 class="text-white">Intro</h1>

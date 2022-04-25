@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-center bg-primary py-14">
+  <section id="skills" class="flex items-center bg-primary py-14">
     <div class="container mx-auto px-10">
       <h1 class="text-white mb-10">Szakterületeink</h1>
       <div class="px-0 sm:px-20">

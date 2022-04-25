@@ -5,11 +5,11 @@
         <img src="~/assets/images/svgs/toros_logo.svg" class="h-auto w-40" />
       </div>
       <div class="flex-1 space-x-5 text-right">
-        <a href="#" class="">{{ $t('menu.intro') }}</a>
-        <a href="#" class="">{{ $t('menu.skills') }}</a>
-        <a href="#" class="">{{ $t('menu.teams') }}</a>
-        <a href="#" class="">{{ $t('menu.responsibility') }}</a>
-        <a href="#" class="">{{ $t('menu.contact') }}</a>
+        <a href="#intro" class="">{{ $t('menu.intro') }}</a>
+        <a href="#skills" class="">{{ $t('menu.skills') }}</a>
+        <a href="#teams" class="">{{ $t('menu.teams') }}</a>
+        <a href="#responsibility" class="">{{ $t('menu.responsibility') }}</a>
+        <a href="#contact" class="">{{ $t('menu.contact') }}</a>
       </div>
       <div class="mx-5">
         <nuxt-link
