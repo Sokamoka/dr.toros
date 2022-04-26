@@ -12,6 +12,9 @@ module.exports = {
         primary: '#34787E',
         secondary: '#60BDBF',
       },
+      aspectRatio: {
+        '3/4': '3 / 4',
+      },
     },
   },
   plugins: [],
