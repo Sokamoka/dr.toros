@@ -1,8 +1,15 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 bg-white/90">
+  <nav
+    :class="[
+      'fixed top-0 left-0 right-0 transition-all duration-500',
+      {
+        'bg-white/90 shadow-md backdrop-blur-md': onScroll,
+      },
+    ]"
+  >
     <div class="container mx-auto px-5 py-5 flex items-center">
-      <div class="">
-        <img src="~/assets/images/svgs/toros_logo.svg" class="h-auto w-40" />
+      <div :class="['transition-all duration-500', onScroll ? 'w-32' : 'w-40']">
+        <img src="~/assets/images/svgs/toros_logo.svg" class="h-auto w-full" />
       </div>
       <div class="flex-1 space-x-5 text-right">
         <a href="#intro" class="">{{ $t('menu.intro') }}</a>
@@ -16,7 +23,7 @@
           v-for="locale in availableLocales"
           :key="locale.code"
           :to="switchLocalePath(locale.code)"
-          :class="['uppercase', {'text-primary': locale.code === $i18n.locale}]"
+          :class="['uppercase', { 'text-primary': locale.code === $i18n.locale }]"
         >
           {{ locale.code }}
         </nuxt-link>
@@ -28,6 +35,13 @@
 <script>
 export default {
   name: 'NavHeader',
+
+  props: {
+    onScroll: {
+      type: Boolean,
+      default: false,
+    },
+  },
 
   computed: {
     availableLocales() {

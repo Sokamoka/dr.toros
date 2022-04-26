@@ -1,6 +1,6 @@
 <template>
   <main>
-    <NavHeader />
+    <NavHeader :on-scroll="isOnScroll" />
     <HeroSection />
     <IntroSection />
     <SkillsSection />
@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import { ref } from '@nuxtjs/composition-api'
+import { useEventListener, useThrottleFn } from '@vueuse/core'
 import NavHeader from '../components/NavHeader.vue'
 import HeroSection from '../components/home/HeroSection.vue'
 import IntroSection from '../components/home/IntroSection.vue'
@@ -31,7 +33,21 @@ export default {
     TeamSection,
     FooterSection,
     ContactSection,
-    ResponsibilitySection
-},
+    ResponsibilitySection,
+  },
+
+  setup() {
+    const isOnScroll = ref(false)
+
+    const throttledFn = useThrottleFn(() => {
+      isOnScroll.value = window.scrollY > 0
+    }, 100)
+
+    useEventListener(window, 'scroll', throttledFn)
+
+    return {
+      isOnScroll,
+    }
+  },
 }
 </script>

@@ -33,8 +33,10 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxt/image',
+    '@vueuse/nuxt',
     '@nuxt/postcss8',
     '@nuxtjs/eslint-module',
+    '@nuxtjs/composition-api/module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
