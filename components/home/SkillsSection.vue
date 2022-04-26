@@ -53,6 +53,50 @@ export default {
           icon: '',
           labelKey: '',
         },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
+        {
+          icon: '',
+          labelKey: '',
+        },
       ],
     }
   },
