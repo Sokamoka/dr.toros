@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="flex items-center py-16">
+  <section id="contact" class="flex items-center py-16 scroll-mt-20">
     <div class="container mx-auto px-10">
       <h1 class="mb-10">Kapcsolat</h1>
       <div class="sm:px-16">

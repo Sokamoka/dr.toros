@@ -1,5 +1,5 @@
 <template>
-  <section id="teams" class="flex items-center">
+  <section id="teams" class="scroll-mt-20">
     <div class="container mx-auto p-10">
       <h1 class="mb-10">Teams</h1>
 

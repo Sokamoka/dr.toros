@@ -8,9 +8,9 @@
     ]"
   >
     <div class="container mx-auto px-5 py-5 flex items-center">
-      <div :class="['transition-all duration-500', onScroll ? 'w-32' : 'w-40']">
+      <a href="#" :class="['block transition-all duration-500', onScroll ? 'w-32' : 'w-40']">
         <img src="~/assets/images/svgs/toros_logo.svg" class="h-auto w-full" />
-      </div>
+      </a>
       <div class="flex-1 space-x-5 text-right">
         <a href="#intro" class="">{{ $t('menu.intro') }}</a>
         <a href="#skills" class="">{{ $t('menu.skills') }}</a>

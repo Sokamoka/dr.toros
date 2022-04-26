@@ -1,5 +1,5 @@
 <template>
-  <section id="responsibility" class="">
+  <section id="responsibility" class="scroll-mt-20">
     <div class="bg-primary">
       <div class="container mx-auto pt-5 px-10">
         <h1 class="text-white my-10">Responsibility</h1>

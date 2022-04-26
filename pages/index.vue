@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { ref } from '@nuxtjs/composition-api'
+import { ref, onMounted } from '@nuxtjs/composition-api'
 import { useEventListener, useThrottleFn } from '@vueuse/core'
 import NavHeader from '../components/NavHeader.vue'
 import HeroSection from '../components/home/HeroSection.vue'
@@ -39,11 +39,14 @@ export default {
   setup() {
     const isOnScroll = ref(false)
 
-    const throttledFn = useThrottleFn(() => {
+    const onCalculateValue = () => {
       isOnScroll.value = window.scrollY > 0
-    }, 100)
+    }
 
+    const throttledFn = useThrottleFn(onCalculateValue, 100)
     useEventListener(window, 'scroll', throttledFn)
+
+    onMounted(onCalculateValue)
 
     return {
       isOnScroll,
