@@ -10,4 +10,8 @@
   h1 {
     @apply text-5xl;
   }
+
+  address {
+    font-style: normal;
+  }
 }

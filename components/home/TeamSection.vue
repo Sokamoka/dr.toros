@@ -11,12 +11,34 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-3">
-          <div class="">Kép</div>
-          <div class="col-span-2 col-end-4">Details</div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-16">
+          <div class="">
+            <img src="/images/image_intro_01.png" height="290" width="490" />
+          </div>
+          <div class="col-span-2 col-end-4">
+            <dl>
+              <dt class="text-2xl">Név</dt>
+              <dt class="text-primary">Titulus</dt>
+              <dt>leírás</dt>
+              <dt>Lista</dt>
+            </dl>
+          </div>
         </div>
 
-        <div>Selector</div>
+        <div class="flex">
+          <div>l</div>
+          <div class="flex-1 flex overflow-hidden">
+            <div class="w-32 h-48 bg-gray-200 mr-0.5">A</div>
+            <div class="w-32 h-48 bg-gray-200 mr-0.5">A</div>
+            <div class="w-32 h-48 bg-gray-200 mr-0.5">A</div>
+            <div class="w-32 h-48 bg-gray-200 mr-0.5">A</div>
+            <div class="w-32 h-48 bg-gray-200 mr-0.5">A</div>
+            <div class="w-32 h-48 bg-gray-200 mr-0.5">A</div>
+            <div class="w-32 h-48 bg-gray-200 mr-0.5">A</div>
+            <div class="w-32 h-48 bg-gray-200 mr-0.5">A</div>
+          </div>
+          <div>></div>
+        </div>
       </div>
     </div>
   </section>
