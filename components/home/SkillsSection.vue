@@ -1,11 +1,10 @@
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <section id="skills" class="flex items-center bg-primary py-14 scroll-mt-20">
     <div class="container mx-auto px-10">
-      <h1 class="text-white mb-10">Szakterületeink</h1>
+      <h1 class="text-white mb-10" v-html="$t('skills.title')"></h1>
       <div class="px-0 sm:px-20">
-        <!-- eslint-disable vue/no-v-html -->
         <div class="sm:columns-2 sm:gap-5 text-white" v-html="$t('skills.content')" />
-        <!-- <eslint-enable>-->
 
         <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-0.5 mt-20">
           <template v-for="skill in skills">
@@ -15,6 +14,7 @@
       </div>
     </div>
   </section>
+  <!-- <eslint-enable>-->
 </template>
 
 <script>

@@ -43,7 +43,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/markdownit'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -71,5 +71,12 @@ export default {
     lazy: true,
     langDir: 'lang/',
     defaultLocale: 'hu',
+  },
+
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    runtime: true,
   },
 }

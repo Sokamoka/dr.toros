@@ -14,4 +14,8 @@
   address {
     font-style: normal;
   }
+
+  p {
+    margin-bottom: 16px;
+  }
 }
