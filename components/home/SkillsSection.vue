@@ -6,7 +6,7 @@
       <div class="px-0 sm:px-20">
         <div class="sm:columns-2 sm:gap-5 text-white" v-html="$t('skills.content')" />
 
-        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-0.5 mt-20">
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-0.5 mt-20">
           <template v-for="skill in skills">
             <SkillsContainer :key="skill.lableKey" :icon="skill.icon" :label-key="skill.labelKey" />
           </template>

@@ -1,7 +1,7 @@
 <template>
-  <div class="aspect-square bg-secondary flex flex-col items-center px-3 py-5">
-    <img src="~/assets/images/svgs/icon-03.svg" class="w-12 h-12 text-white mb-5" />
-    <p class="text-center text-white text-xs">{{ labelKey }}</p>
+  <div class="aspect-square bg-secondary grid items-center">
+    <img src="~/assets/images/svgs/icon-03.svg" class="w-auto max-h-12 justify-self-center" />
+    <p class="text-center text-white text-xs justify-self-center">{{ labelKey }}</p>
   </div>
 </template>
 

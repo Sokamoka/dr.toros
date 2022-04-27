@@ -1,7 +1,7 @@
 <template>
   <nav
     :class="[
-      'fixed top-0 left-0 right-0 transition-all duration-500',
+      'fixed top-0 left-0 right-0 transition-all duration-500 z-50',
       {
         'bg-white/90 shadow-md backdrop-blur-md': onScroll,
       },

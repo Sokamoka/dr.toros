@@ -24,5 +24,11 @@ export default async ({ $md }) => {
       title: 'Szakterületeink',
       content: Content.Skills,
     },
+
+    responsibility: {
+      title: 'Társadalmi felelősségvállalásunk',
+      content: Content.Responsibility,
+      quote: 'Think legally, act socially.',
+    },
   })
 }
