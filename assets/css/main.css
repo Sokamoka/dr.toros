@@ -11,6 +11,10 @@
     @apply text-5xl;
   }
 
+  h2 {
+    @apply text-3xl mb-4;
+  }
+
   address {
     font-style: normal;
   }
