@@ -25,6 +25,12 @@ export default async ({ $md }) => {
       content: Content.Skills,
     },
 
+    teams: {
+      title: 'Munkatársaink',
+      quote: $md.render(`„You can do what I cannot do. I can do what you cannot do. Together we can do great things.”
+        Mother Theresa`),
+    },
+
     responsibility: {
       title: 'Társadalmi felelősségvállalásunk',
       content: Content.Responsibility,
