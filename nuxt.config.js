@@ -38,6 +38,7 @@ export default {
     '@nuxt/image',
     '@vueuse/nuxt',
     '@nuxt/postcss8',
+    '@nuxtjs/google-fonts',
     '@nuxtjs/eslint-module',
     '@nuxtjs/composition-api/module',
   ],
@@ -78,5 +79,11 @@ export default {
     linkify: true,
     breaks: true,
     runtime: true,
+  },
+
+  googleFonts: {
+    families: {
+      'Source+Serif+Pro': [200, 400, 700],
+    },
   },
 }
