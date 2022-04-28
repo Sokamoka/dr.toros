@@ -10,7 +10,7 @@
           <div class="text-white -mb-5" v-html="$t('responsibility.content')"></div>
           <!-- <eslint-enable>-->
           <div class="self-end row-span-2">
-            <img src="/images/image_intro_01.png" />
+            <img src="/images/responsibility.jpg" />
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-4 items-center mb-10 gap-5">
             <img src="~/assets/images/svgs/bridge_logo.svg" class="w-auto max-h-12 justify-self-center" />

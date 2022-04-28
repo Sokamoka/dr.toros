@@ -8,12 +8,12 @@
     ]"
   >
     <div class="container mx-auto px-5 py-5 flex items-center">
-      <a href="#" :class="['block transition-all duration-500', onScroll ? 'w-32' : 'w-40']">
+      <a href="#" :class="['block transition-all duration-500', onScroll ? 'w-28' : 'w-40']">
         <img src="~/assets/images/svgs/toros_logo.svg" class="h-auto w-full" />
       </a>
       <div class="flex-1">
         <div
-          class="absolute top-full left-0 right-0 bg-secondary/90 flex flex-col space-y-5 p-5 shadow-md md:space-x-5 md:text-right md:block md:relative md:bg-transparent md:shadow-none"
+          class="absolute top-full left-0 right-0 bg-secondary/90 flex flex-col space-y-5 p-5 shadow-md md:space-x-5 md:text-right md:block md:relative md:bg-transparent md:shadow-none md:p-0"
           :class="[isMenuOpen ? 'block' : 'hidden']"
         >
           <a href="#intro" class="">{{ $t('menu.intro') }}</a>

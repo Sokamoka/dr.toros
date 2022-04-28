@@ -6,7 +6,7 @@
       <h1 class="text-white mb-5 truncate">{{ $t('intro.title') }}</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-20 px-0 xl:px-16">
         <div>
-          <img src="/images/image_intro_01.png" height="290" width="490" />
+          <img src="/images/intro-01.jpg" />
         </div>
         <div
           class="text-white text-right text-2xl pt-16 sm:-ml-56 bg-primary sm:bg-transparent"
