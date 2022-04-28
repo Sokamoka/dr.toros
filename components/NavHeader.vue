@@ -11,12 +11,17 @@
       <a href="#" :class="['block transition-all duration-500', onScroll ? 'w-32' : 'w-40']">
         <img src="~/assets/images/svgs/toros_logo.svg" class="h-auto w-full" />
       </a>
-      <div class="flex-1 space-x-5 text-right">
-        <a href="#intro" class="">{{ $t('menu.intro') }}</a>
-        <a href="#skills" class="">{{ $t('menu.skills') }}</a>
-        <a href="#teams" class="">{{ $t('menu.teams') }}</a>
-        <a href="#responsibility" class="">{{ $t('menu.responsibility') }}</a>
-        <a href="#contact" class="">{{ $t('menu.contact') }}</a>
+      <div class="flex-1">
+        <div
+          class="absolute top-full left-0 right-0 bg-secondary/90 flex flex-col space-y-5 p-5 shadow-md md:space-x-5 md:text-right md:block md:relative md:bg-transparent md:shadow-none"
+          :class="[isMenuOpen ? 'block' : 'hidden']"
+        >
+          <a href="#intro" class="">{{ $t('menu.intro') }}</a>
+          <a href="#skills" class="">{{ $t('menu.skills') }}</a>
+          <a href="#teams" class="">{{ $t('menu.teams') }}</a>
+          <a href="#responsibility" class="">{{ $t('menu.responsibility') }}</a>
+          <a href="#contact" class="">{{ $t('menu.contact') }}</a>
+        </div>
       </div>
       <div class="mx-5">
         <nuxt-link
@@ -28,6 +33,9 @@
           {{ locale.code }}
         </nuxt-link>
       </div>
+      <button type="button" class="md:hidden" @click="onClickMenu">
+        <img src="~/assets/images/svgs/icon-menu.svg" class="w-6 h-6" />
+      </button>
     </div>
   </nav>
 </template>
@@ -43,9 +51,21 @@ export default {
     },
   },
 
+  data() {
+    return {
+      isMenuOpen: false,
+    }
+  },
+
   computed: {
     availableLocales() {
       return this.$i18n.locales
+    },
+  },
+
+  methods: {
+    onClickMenu() {
+      this.isMenuOpen = !this.isMenuOpen
     },
   },
 }
