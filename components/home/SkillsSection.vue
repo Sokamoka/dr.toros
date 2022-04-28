@@ -2,7 +2,7 @@
   <!-- eslint-disable vue/no-v-html -->
   <section id="skills" class="flex items-center bg-primary py-14 scroll-mt-20">
     <div class="container mx-auto px-10">
-      <h1 class="text-white mb-10" v-html="$t('skills.title')"></h1>
+      <h1 class="text-white mb-10 truncate" v-html="$t('skills.title')"></h1>
       <div class="px-0 sm:px-20">
         <div class="sm:columns-2 sm:gap-5 text-white" v-html="$t('skills.content')" />
 
