@@ -31,59 +31,59 @@ export default {
     return {
       skills: [
         {
-          icon: '',
+          icon: 'icon-00',
           labelKey: 'Peres és peren kívüli vitarendezés',
         },
         {
-          icon: '',
+          icon: 'icon-08',
           labelKey: 'Mediáció',
         },
         {
-          icon: '',
+          icon: 'icon-09',
           labelKey: 'Munkajog és compliance',
         },
         {
-          icon: '',
+          icon: 'icon-10',
           labelKey: 'Adatvédelem',
         },
         {
-          icon: '',
+          icon: 'icon-11',
           labelKey: 'Egészségügyi jog',
         },
         {
-          icon: '',
+          icon: 'icon-12',
           labelKey: 'Reklám-és médiajog',
         },
         {
-          icon: '',
+          icon: 'icon-13',
           labelKey: 'EU projektek, közbeszerzés',
         },
         {
-          icon: '',
+          icon: 'icon-01',
           labelKey: 'Ingatlanjog',
         },
         {
-          icon: '',
+          icon: 'icon-02',
           labelKey: 'Társasági jog és M&A',
         },
         {
-          icon: '',
+          icon: 'icon-03',
           labelKey: 'Bank-, pénzügyi- és finanszírozási jog',
         },
         {
-          icon: '',
+          icon: 'icon-04',
           labelKey: 'Követeléskezelés, fizetésképtelenségi eljárások',
         },
         {
-          icon: '',
+          icon: 'icon-05',
           labelKey: 'Szerződések joga',
         },
         {
-          icon: '',
+          icon: 'icon-06',
           labelKey: 'Szellemi alkotások joga',
         },
         {
-          icon: '',
+          icon: 'icon-07',
           labelKey: 'Tulajdonosi ellenőrzés',
         },
       ],
