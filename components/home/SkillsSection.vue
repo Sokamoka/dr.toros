@@ -3,12 +3,12 @@
   <section id="skills" class="flex items-center bg-primary py-14 scroll-mt-20">
     <div class="container mx-auto px-10">
       <h1 class="text-white mb-10 truncate" v-html="$t('skills.title')"></h1>
-      <div class="px-0 sm:px-20">
+      <div class="px-0 xl:px-16">
         <div class="sm:columns-2 sm:gap-5 text-white" v-html="$t('skills.content')" />
 
         <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-0.5 mt-20">
           <template v-for="skill in skills">
-            <SkillsContainer :key="skill.lableKey" :icon="skill.icon" :label-key="skill.labelKey" />
+            <SkillsContainer :key="skill.lableKey" :icon="skill.icon" :label="skill.labelKey" />
           </template>
         </div>
       </div>
@@ -36,11 +36,11 @@ export default {
         },
         {
           icon: '',
-          labelKey: 'mediáció',
+          labelKey: 'Mediáció',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Munkajog és compliance',
         },
         {
           icon: '',
@@ -48,43 +48,43 @@ export default {
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Egészségügyi jog',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Reklám-és médiajog',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'EU projektek, közbeszerzés',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Ingatlanjog',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Társasági jog és M&A',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Bank-, pénzügyi- és finanszírozási jog',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Követeléskezelés, fizetésképtelenségi eljárások',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Szerződések joga',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Szellemi alkotások joga',
         },
         {
           icon: '',
-          labelKey: '',
+          labelKey: 'Tulajdonosi ellenőrzés',
         },
       ],
     }

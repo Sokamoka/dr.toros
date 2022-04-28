@@ -3,8 +3,8 @@
   <section id="intro" class="pb-20 scroll-mt-20">
     <div class="bg-primary w-full h-80"></div>
     <div class="container mx-auto -mt-72 p-10">
-      <h1 class="text-white mb-5">{{ $t('intro.title') }}</h1>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-20 px-0 sm:px-16">
+      <h1 class="text-white mb-5 truncate">{{ $t('intro.title') }}</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-20 px-0 xl:px-16">
         <div>
           <img src="/images/image_intro_01.png" height="290" width="490" />
         </div>

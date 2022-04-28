@@ -5,9 +5,11 @@
         {{ $t('teams.title') }}
       </h1>
 
-      <div class="sm:px-16">
+      <div class="lg:px-16">
         <div class="flex justify-end mb-16">
+          <!-- eslint-disable vue/no-v-html -->
           <p class="max-w-2xl text-right text-3xl" v-html="$t('teams.quote')"></p>
+          <!-- <eslint-enable>-->
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">

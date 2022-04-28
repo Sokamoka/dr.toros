@@ -5,8 +5,10 @@
         <h1 class="text-white my-10 overflow-hidden">
           {{ $t('responsibility.title') }}
         </h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:pl-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 xl:pl-16">
+          <!-- eslint-disable vue/no-v-html -->
           <div class="text-white -mb-5" v-html="$t('responsibility.content')"></div>
+          <!-- <eslint-enable>-->
           <div class="self-end row-span-2">
             <img src="/images/image_intro_01.png" />
           </div>

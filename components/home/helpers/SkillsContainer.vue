@@ -1,7 +1,7 @@
 <template>
-  <div class="aspect-square bg-secondary grid items-center">
-    <img src="~/assets/images/svgs/icon-03.svg" class="w-auto max-h-12 justify-self-center" />
-    <p class="text-center text-white text-xs justify-self-center">{{ labelKey }}</p>
+  <div class="aspect-square bg-secondary grid grid-rows-2 items-center p-3 overflow-hidden">
+    <img src="~/assets/images/svgs/icon-03.svg" class="w-auto max-h-12 justify-self-center items-start" />
+    <p class="text-center text-white justify-self-center self-start text-xs md:text-sm">{{ label }}</p>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
       required: true,
     },
 
-    labelKey: {
+    label: {
       type: String,
       required: true,
     },
