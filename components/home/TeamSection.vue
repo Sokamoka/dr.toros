@@ -48,54 +48,47 @@
 </template>
 
 <script>
-import { ref, computed } from '@nuxtjs/composition-api'
 import { Navigation } from 'swiper'
 import { SwiperCore, Swiper, SwiperSlide } from 'swiper-vue2'
+import TEAM_MEMBERS_HU from '../../helpers/teams.hu-HU'
 import 'swiper/swiper-bundle.css'
 
 SwiperCore.use([Navigation])
 
-const TEAM_MEMBERS = [
-  {
-    id: 0,
-    imageSrc: '/images/dr._Toros_Judit.jpg',
-    name: 'dr. Törös Judit',
-    title: 'alapító, irodavezető ügyvéd',
-    description:
-      'Az iroda ügyvezető partnere, aki a hosszútávú stratégiáért felel és szakmailag koordinálja a kulcsfontosságú tranzakciókat, megbízásokat',
-    details:
-      'széleskörű peres képviselet választottbíróság és rendes bíróságok előtt kiemelt M&A tranzakciókban való részvétel, az ahhoz kapcsolódó teljes körű jogi átvilágítási eljárások koordinálásaBridge Budapest Vállalható Üzleti Kultúráért nagykövetemagyar, angol, német',
-  },
-  {
-    id: 1,
-    imageSrc: '/images/dr._Toros_Judit.jpg',
-    name: 'dr. Fekete Zita L.L.M.',
-    title: 'ügyvéd, partner, közbeszerzési szakjogász',
-    description:
-      'Az iroda ügyvezető partnere, aki a hosszútávú stratégiáért felel és szakmailag koordinálja a kulcsfontosságú tranzakciókat, megbízásokat',
-    details:
-      'széleskörű peres képviselet választottbíróság és rendes bíróságok előtt kiemelt M&A tranzakciókban való részvétel, az ahhoz kapcsolódó teljes körű jogi átvilágítási eljárások koordinálásaBridge Budapest Vállalható Üzleti Kultúráért nagykövetemagyar, angol, német',
-  },
-]
+// const TEAM_MEMBERS = [
+//   {
+//     id: 0,
+//     imageSrc: '/images/dr._Toros_Judit.jpg',
+//     name: 'dr. Törös Judit',
+//     title: 'alapító, irodavezető ügyvéd',
+//     description:
+//       'Az iroda ügyvezető partnere, aki a hosszútávú stratégiáért felel és szakmailag koordinálja a kulcsfontosságú tranzakciókat, megbízásokat',
+//     details:
+//       'széleskörű peres képviselet választottbíróság és rendes bíróságok előtt kiemelt M&A tranzakciókban való részvétel, az ahhoz kapcsolódó teljes körű jogi átvilágítási eljárások koordinálásaBridge Budapest Vállalható Üzleti Kultúráért nagykövetemagyar, angol, német',
+//   },
+//   {
+//     id: 1,
+//     imageSrc: '/images/dr._Toros_Judit.jpg',
+//     name: 'dr. Fekete Zita L.L.M.',
+//     title: 'ügyvéd, partner, közbeszerzési szakjogász',
+//     description:
+//       'Az iroda ügyvezető partnere, aki a hosszútávú stratégiáért felel és szakmailag koordinálja a kulcsfontosságú tranzakciókat, megbízásokat',
+//     details:
+//       'széleskörű peres képviselet választottbíróság és rendes bíróságok előtt kiemelt M&A tranzakciókban való részvétel, az ahhoz kapcsolódó teljes körű jogi átvilágítási eljárások koordinálásaBridge Budapest Vállalható Üzleti Kultúráért nagykövetemagyar, angol, német',
+//   },
+// ]
 
 export default {
   components: {
     Swiper,
     SwiperSlide,
   },
-  setup() {
-    const selectedMemberId = ref(0)
 
-    const onSelectMemeber = (id) => {
-      selectedMemberId.value = id
-    }
-
-    const selectedMember = computed(() => TEAM_MEMBERS.find((member) => member.id === selectedMemberId.value))
-
+  data() {
     return {
-      selectedMember,
-      members: TEAM_MEMBERS,
-      onSelectMemeber,
+      selectedMemberId: 0,
+      teams_hu: TEAM_MEMBERS_HU,
+      teams_en: TEAM_MEMBERS_HU,
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -109,15 +102,32 @@ export default {
       },
     }
   },
+
+  computed: {
+    members() {
+      console.log(this.$i18n.locale);
+      return this[`teams_${this.$i18n.locale}`]
+    },
+    selectedMember() {
+      return this.members.find((member) => member.id === this.selectedMemberId)
+    },
+  },
+
+  methods: {
+    onSelectMemeber(id) {
+      this.selectedMemberId = id
+    },
+  },
 }
 </script>
 
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-out;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
 }
 </style>
