@@ -46,8 +46,8 @@
               <dl :key="selectedMember.id">
                 <dt class="text-2xl mt-10">{{ selectedMember.name }}</dt>
                 <dt class="text-primary text-xl mt-3">{{ selectedMember.title }}</dt>
-                <dt class="mb-5 mt-12">{{ selectedMember.description }}</dt>
-                <ul role="list" class="marker:text-primary list-disc pl-4">
+                <dt v-if="selectedMember.description" class="mt-12">{{ selectedMember.description }}</dt>
+                <ul role="list" class="marker:text-primary list-disc pl-4 mt-5">
                   <li v-for="(detail, index) in selectedMember.details" :key="index">
                     {{ detail }}
                   </li>
