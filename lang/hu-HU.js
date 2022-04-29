@@ -10,6 +10,10 @@ export default async ({ $md }) => {
       contact: 'Kapcsolat',
     },
 
+    hero: {
+      title: 'Think legally, act socially',
+    },
+
     intro: {
       title: 'Bemutatkozás',
       quote: $md.render(`„Fight for the things that you care about,
@@ -35,6 +39,11 @@ export default async ({ $md }) => {
       title: 'Társadalmi felelősségvállalásunk',
       content: Content.Responsibility,
       quote: 'Think legally, act socially.',
+    },
+
+    contacts: {
+      title: 'Kapcsolat',
+      phone: 'Telefon:',
     },
   })
 }
