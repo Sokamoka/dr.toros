@@ -9,7 +9,7 @@
           <!-- eslint-disable vue/no-v-html -->
           <div class="text-white -mb-5" v-html="$t('responsibility.content')"></div>
           <!-- <eslint-enable>-->
-          <div class="self-end row-span-2">
+          <div class="self-end row-span-2 -mx-10 sm:mx-0">
             <img src="/images/responsibility.jpg" />
           </div>
           <div class="grid grid-cols-2 sm:grid-cols-4 items-center mb-10 gap-5">

@@ -37,9 +37,11 @@
             </div>
           </div>
           <div class="">
-            <transition name="fade" mode="out-in">
-              <img :key="selectedMember.id" :src="selectedMember.imageSrc" class="w-full sm:max-w-[420px] h-auto" />
-            </transition>
+            <custom-image
+              :key="selectedMember.id"
+              :src="selectedMember.imageSrc"
+              class="h-auto sm:max-w-[420px] bg-secondary"
+            />
           </div>
           <div class="">
             <transition name="fade" mode="out-in">
@@ -66,6 +68,7 @@ import { Navigation } from 'swiper'
 import { SwiperCore, Swiper, SwiperSlide } from 'swiper-vue2'
 import TEAM_MEMBERS_HU from '../../helpers/teams.hu-HU'
 import 'swiper/swiper-bundle.css'
+import CustomImage from './helpers/CustomImage.vue'
 
 SwiperCore.use([Navigation])
 
@@ -73,6 +76,7 @@ export default {
   components: {
     Swiper,
     SwiperSlide,
+    CustomImage,
   },
 
   data() {
