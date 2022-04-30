@@ -25,7 +25,7 @@
                 <swiper-slide v-for="member in members" :key="member.id">
                   <a href="#" class="w-full aspect-3/4 bg-primary block" @click.prevent="onSelectMemeber(member.id)">
                     <img
-                      src="/images/dr._Toros_Judit.jpg"
+                      :src="member.imageSrc"
                       :class="[
                         'transition-opacity duration-500 ease-out',
                         { 'opacity-50': selectedMember.id === member.id },

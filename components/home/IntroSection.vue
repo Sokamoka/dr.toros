@@ -14,15 +14,15 @@
         />
         <div class="sm:pr-16 pt-10 sm:pt-0" v-html="$t('intro.section1')"></div>
         <div class="-mx-10  sm:mx-0">
-          <img src="/images/image_intro_01.png" />
+          <img src="/images/intro-02.jpg" />
         </div>
         <div class="order-6 sm:order-none -mx-10 sm:mx-0">
-          <img src="/images/image_intro_01.png" />
+          <img src="/images/intro-03.jpg" />
         </div>
         <div class="sm:pl-16 pt-10 sm:pt-0 order-5 sm:order-none" v-html="$t('intro.section2')"></div>
         <div class="sm:pr-16 pt-10 sm:pt-0" v-html="$t('intro.section3')"></div>
         <div class="-mx-10 sm:mx-0">
-          <img src="/images/image_intro_01.png" />
+          <img src="/images/intro-04.jpg" />
         </div>
       </div>
     </div>
