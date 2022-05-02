@@ -14,11 +14,17 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div class="sm:col-span-2 sm:order-last">
-            <div class="relative overflow-hidden">
+            <div class="relative">
+              <a href="#" class="swiper-prev absolute top-1/2 -left-8 -translate-y-2.5">
+                <img src="~/assets/images/svgs/icon-left.svg" class="w-5 h-5" />
+              </a>
               <swiper
                 :slides-per-view="2"
                 :space-between="16"
-                :navigation="true"
+                :navigation="{
+                  nextEl: '.swiper-next',
+                  prevEl: '.swiper-prev',
+                }"
                 :loop="false"
                 :breakpoints="breakpoints"
               >
@@ -34,6 +40,9 @@
                   </a>
                 </swiper-slide>
               </swiper>
+              <a href="#" class="swiper-next absolute top-1/2 -right-8 -translate-y-2.5">
+                <img src="~/assets/images/svgs/icon-right.svg" class="w-5 h-5" />
+              </a>
             </div>
           </div>
           <div class="">
